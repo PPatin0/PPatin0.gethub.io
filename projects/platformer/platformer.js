@@ -69,6 +69,8 @@ createCollectable("grace", 700, 400, 20, 0.5);
     // Your wall choices are: 'top' 'left' 'right' and 'bottom'
     // example usage: createCannon(side, position, delay, width, height)
 
+    createCannon("left", 600, 1000);
+    createCannon("top", 600, 1000);
 
 
     /////////////////////////////////////////////////
