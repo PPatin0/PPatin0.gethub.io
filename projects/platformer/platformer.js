@@ -44,12 +44,13 @@ $(function () {
     // You must decide the x position, y position, width, and height of the platforms
     // example usage: createPlatform(x,y,width,height)
 createPlatform(600, 190, 500, 20) 
-createPlatform(150, 300, 400, 20)
+createPlatform(400, 300, 100, 20)
 createPlatform(700, 430, 200, 20)
-createPlatform(1000,540, 200, 20)
+createPlatform(1000, 540, 200, 20)
 createPlatform(780, 630, 200, 20)
 createPlatform(1300, 400, 50, 20)
-
+createPlatform(0, 400, 40, 20)
+createPlatform(200, 200, 40, 20)
 
     
     // TODO 2
@@ -59,8 +60,9 @@ createPlatform(1300, 400, 50, 20)
     // example usage: createCollectable(type, x, y, gravity, bounce)
 createCollectable("database", 1200, 100)
 createCollectable("database", 1000, 100, 20, 0.5);
-createCollectable("max", 800, 500, 20, 0.5);
-createCollectable("grace", 700, 400, 20, 0.5);
+createCollectable("database", 800, 500, 20, 0.5);
+createCollectable("database", 700, 400, 20, 0.5);
+createCollectable("database", 0, 350, 20, 0.5);
 
 
     // TODO 3
@@ -69,8 +71,7 @@ createCollectable("grace", 700, 400, 20, 0.5);
     // Your wall choices are: 'top' 'left' 'right' and 'bottom'
     // example usage: createCannon(side, position, delay, width, height)
 
-    createCannon("left", 600, 1000);
-    createCannon("top", 600, 1000);
+
 
 
     /////////////////////////////////////////////////
