@@ -34,11 +34,12 @@ var init = function (window) {
 
 
         // TODO 3 / 7 : Call the drawCircle() function 
-    drawCircle();
-    drawCircle();
-    drawCircle();
-    drawCircle();
-    drawCircle();
+        var loopsCompleated = 0;
+
+        while (loopsCompleated < 10) {
+            drawCircle();
+            loopsCompleated++;
+        }
 
         ////////////////////////////////////////////////////////////
         ///////////////// PROGRAM LOGIC ////////////////////////////
