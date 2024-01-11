@@ -36,7 +36,7 @@ var init = function (window) {
         // TODO 3 / 7 : Call the drawCircle() function 
         var loopsCompleated = 0;
 
-        while (loopsCompleated < 10) {
+        while (loopsCompleated < 100) {
             drawCircle();
             loopsCompleated++;
         }
@@ -52,11 +52,7 @@ var init = function (window) {
         */
         function update() {
             // TODO 4 : Update the circle's position //
-            physikz.updatePosition(circles[0]);
-            physikz.updatePosition(circles[1]);
-            physikz.updatePosition(circles[2]);
-            physikz.updatePosition(circles[3]);
-            physikz.updatePosition(circles[4]);
+           
             
             // TODO 5 / 10 : Call game.checkCirclePosition() on your circles.
            canvas.width
@@ -67,11 +63,21 @@ var init = function (window) {
            circle.radius
            
             if ( circle.x > canvas.width + circle.radius ) {
-            circle.x = 0 - circle.radius;
-           }
-
+                circle.x = 0 - circle.radius;
+            }
+            if ( circle.x < 0 - circle.raius ){
+                circle.x = canvas.width + circle.radius
+            }
+            if ( circle.y > canvas.height + circle.radius ){
+                circle.y = 0 - circle.radius;
+            }
+            if ( circle.y < 0 - circle.radius ){
+                circle.y = canvas.height + circle.radius
+            }
             // TODO 9 : Iterate over the array
-           
+         for (var i = 0; i < circles.length; i++){
+            physikz.updatePosition(circles[i]);
+         }
             
         }
     
