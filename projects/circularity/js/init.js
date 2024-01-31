@@ -45,7 +45,7 @@ var init = function (window) {
         ///////////////// PROGRAM LOGIC ////////////////////////////
         ////////////////////////////////////////////////////////////
         
-        /* 
+        /* s
         This Function is called 60 times/second producing 60 frames/second.
         In each frame, for every circle, it should redraw that circle
         and check to see if it has drifted off the screen.         
