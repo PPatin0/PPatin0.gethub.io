@@ -61,6 +61,30 @@ function runProgram(){
       console.log(event.which + " pressed")
       walker.speedX += 5 
     }
+
+    function handelKeyUp(event) {
+      if (event.which === KEY.UP || event.which === KEY.DOWN){
+        walker.speedY = 0
+      }
+      if (event.which === KEY.LEFT || event.which === KEY.RIGHT){
+        walker.speedX = 0
+      }
+    }
+
+    wallCollision(){
+      if (walker.x < 0){
+        endGame
+      }
+      if (walker.y < 0){
+        endGame
+      }
+      if (walker.x > board.width){
+        endGame
+      }
+      if (walker.y > board.width){
+        endGame
+      }
+    }
   }
 
   ////////////////////////////////////////////////////////////////////////////////
